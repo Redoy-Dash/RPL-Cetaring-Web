@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+
+:root{
+    --poppins: 'Poppins', sans-serif;
+    --white: rgb(250, 248, 239);
+    --golden: rgb(243, 192, 52);
+    --golden-hover: rgba(209, 165, 44, 0.917);
+    --cyan: rgb(19, 224, 224);
+    --dark: rgb(36, 35, 35);
+    --box-shadow: rgba(36, 35, 35, 0.373);
+    --overlay: rgba(36, 35, 35, 0.750);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--poppins);
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style-type: none;
+}
+
+.container{
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+
+/* ============ Header Section ============  */
+.header{
+    background: rgb(25, 25, 25);}
+.header .container{
+    padding: 14px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    color: var(--golden);
+    font-weight: 800;
+    font-size: 24px;
+    text-transform: uppercase;
+    word-spacing: 8px;
+}
+.logo span{
+    color: var(--cyan);
+}
+.container .menu{
+    display: flex;
+}
+.container .menu li a{
+    color: var(--white);
+    font-size: 22px;
+    padding: 8px 22px;
+    text-transform: uppercase;
+    transition: 0.3s all ease-in-out;
+}
+.container .menu li a:hover{
+    color: var(--golden);
+}
+.container .menu li a:last-of-type{
+    padding-right: 0;
+}
+
+
+
+/* =========== Banner Section ==========  */
+.banner{
+    background: url('./../assests/images/about-header.jpg');
+}
+.banner h2{
+    font-size: 86px;
+    color: var(--white);
+    padding: 240px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+
+/* ========= Stuff Section =======  */
+.staff{
+    padding-top: 120px;
+}
+.staff-header{
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 36px;
+    color: var(--dark);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.staff .container{
+    padding: 0 0 140px 0;
+    display: flex;
+    gap: 14px;
+    justify-content: space-around;
+}
+.staff-card{
+    overflow: hidden;
+    padding: 8px;
+}
+.staff-card img{
+    width: 100%;
+    border-radius: 4px;
+}
+.staff-card h2{
+    font-size: 28px;
+    color: var(--dark);
+}
+
+
+
+/* =========== About Company ==========  */
+.about-company{
+    margin-bottom: 80px;
+}
+.about-company .container{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.about-image{
+    width: 50%;
+    padding: 20px;
+}
+.about-text-content{
+    width: 50%;
+    padding: 20px;
+}
+.about-image img{
+    width: 100%;
+}
+.about-text-content h2{
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--dark);
+    margin-bottom: 24px;
+}
+.about-text-content p:first-of-type{
+    color: var(--golden-hover);
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.about-text-content p:last-of-type{
+    font-size: 22px;
+}
+
+.about-text-content a{
+    background: var(--golden);
+    padding: 12px 24px;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 48px;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.3s all ease-in-out;
+}
+.about-text-content a:hover{
+    background: var(--golden-hover);
+}
+
+
+
+
+/* =========== footer ========  */
+.footer{
+    padding: 8px 0;
+    background: var(--golden);
+}
+.footer p{
+    text-align: center;
+}
+.footer p a{
+    color: var(--dark);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
